@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>小鱼网</title>
-<script src="../jquery-3.1.1.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/font-awesome.css" rel="stylesheet"/>
