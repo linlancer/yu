@@ -40,7 +40,7 @@ body{
 .side-menu{
 	position:fixed;
 	margin-top:150px;
-	margin-left:83%;
+	margin-left:89%;
 	z-index:300;
 	}
 .carousel-title{
@@ -114,7 +114,13 @@ body{
 			$this.addClass('btn-info');
 		});
     });
-	
+		$(function sideMenu(){
+			var width=$('body').width();
+			if(width<=1340){
+				$('.side-menu').hide();
+			};
+		});
+
 			
 </script>
 <body>
@@ -421,7 +427,7 @@ body{
                             </div>
                             <div class="collapse panel-collapse in" id="itemOne">
                                 <div class="panel-body">
-                                    <img src="image/carent.jpg">
+                                    <img src="image/carent.jpg" width="100%">
                                 </div>
                             </div>
                         </div>
@@ -431,7 +437,7 @@ body{
                             </div>
                             <div class="collapse panel-collapse" id="itemTwo">
                                 <div class="panel-body">
-                                    <img src="image/gulangyu.jpg">
+                                    <img src="image/gulangyu.jpg"  width="100%">
                                 </div>
                             </div>
                         </div>
@@ -441,7 +447,7 @@ body{
                             </div>
                             <div class="collapse panel-collapse" id="itemThree">
                                 <div class="panel-body">
-                                    <img src="image/news.jpg">
+                                    <img src="image/news.jpg"  width="100%">
                                 </div>
                             </div>
                         </div>
@@ -451,7 +457,7 @@ body{
                             </div>
                             <div class="collapse panel-collapse" id="itemFour">
                                 <div class="panel-body">
-                                    <img src="image/xiamenbei.jpg">
+                                    <img src="image/xiamenbei.jpg"  width="100%">
                                 </div>
                             </div>
                          </div>
@@ -461,37 +467,38 @@ body{
             <!--主版中-->
             <div class="col-md-5">
                 <div class="panel">
-                    <div class="panel-heading"><h4><strong><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></strong></h4></div>
-                    <div class="panel-body"><?php echo $arr[4]; ?><a href="#">[详细]</a></div>
-                    <div class="panel-heading"><h4><strong><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></strong></h4></div>
-                    <div class="panel-body"><?php echo $arr[4]; ?><a href="#">[详细]</a></div>
-                    <div class="panel-heading"><h4><strong><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></strong></h4></div>
-                    <div class="panel-body"><?php echo $arr[4]; ?><a href="#">[详细]</a></div>
+                    <div class="panel-heading"><h4><strong><a href="#">厦门38亿元打造小镇，入选全省首批特色小镇</a></strong></h4></div>
+                    <div class="panel-body">说到灌口，您会想到啥？很快八闽古镇灌口将再次刷新您的印象，因为集美区要打造一个以汽车为主题的特色小镇，还入<a href="#">[详细]</a></div>
+                    <div class="panel-heading"><h4><strong><a href="#">某夜场妈咪和我老公上床，还发短信来羞辱我</a></strong></h4></div>
+                    <div class="panel-body">网上有人把她人肉出来，原来是夜场的妈咪，且很多夜场都有她的身影。然后，我就收到了她发来的这些短信....<a href="#">[详细]</a></div>
+                    <div class="panel-heading"><h4><strong><a href="#">还没出月子，老公就把我的行李丢回了娘家</a></strong></h4></div>
+                    <div class="panel-body">他们完全不顾我的想法，还没出月子，就来赶我走，说要离婚，叫我永远不要进他家门，把我的行李全部扔回我娘家，把<a href="#">[详细]</a></div>
                 </div>
                 <div class=" text" id="news-item">
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[生活]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[生活]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div class="text-center"><h4><strong><a href="#"></a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></strong></h4></div>
-                    <div ><a href="yu-shequ.php">[生活]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[小鱼]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[小鱼]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div class="text-center"><h4><strong><a href="#"></a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></strong></h4></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[娱乐]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
-                    <div ><a href="yu-shequ.php">[娱乐]</a><a href="#"><?php $arr=($db->fetch(1));echo $arr[1]; ?></a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#"> 2017年厦门最全落户攻略 掌握这些落户就很简单了</a></div>
+                    <div ><a href="yu-shequ.php">[生活]</a><a href="#">谁说外卖小哥月入过万？今天送了7小时才赚了100多块</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">全城寻宝！一汽-大众杯少儿才艺大赛开始报名啦~</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">这家超市卖的黑芝麻居然是用墨汁染的 洗完全褪色了</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">水管界的爱马仕 不锈钢水管或将引领家装新趋势</a></div>
+                    <div ><a href="yu-shequ.php">[生活]</a><a href="#">海边的麻辣烫，看完这个你还敢吃吗？</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">iphone7、GUCCI、周大福金块、奔驰SMAR汽车免费送！</a></div>
+                    <div class="text-center"><h4><strong><a href="#"></a><a href="#">车没到这大姐强占着车位 差点想跟她动手！</a></strong></h4></div>
+                    <div ><a href="yu-shequ.php">[生活]</a><a href="#">听说，最近厦门出现一个奇葩“书店”？</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">被大货车追尾刮擦 等我停好车要讨说法 他竟光速跑了</a></div>
+                    <div ><a href="yu-shequ.php">[小鱼]</a><a href="#">福利 那些走心走肾的五一情侣游 总有一条戳中你</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">今天去马巷看房子一平米降三四千，厦门房价降了？</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">电饭煲煎牛排，再也不怕被油溅到啦！</a></div>
+                    <div ><a href="yu-shequ.php">[小鱼]</a><a href="#">网曝厦门汇景集海峡现代城团诈骗9个亿，处罚才15万</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">点赞！厦门车管所周末加班为台胞集中更换驾驶证</a></div>
+                    <div class="text-center"><h4><strong><a href="#"></a><a href="#">开顺风车接了个南洋学院大学生去北站 他不付钱还跑了</a></strong></h4></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">优酷全明星独家爆料，尼古拉斯赵四约炮女粉丝</a></div>
+                    <div ><a href="yu-shequ.php">[娱乐]</a><a href="#">优酷全明星独家爆料，刘小光出轨女粉丝</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">优酷全明星独家爆料，女粉丝为刘小光买伟哥</a></div>
+                    <div ><a href="yu-shequ.php">[社区]</a><a href="#">优酷全明星独家爆料，刘小光约炮不给钱</a></div>
+                    <div ><a href="yu-shequ.php">[娱乐]</a><a href="#">优酷全明星独家爆料刘小光出轨，与女粉丝不可描述</a></div>
                 </div>
             </div>
+
             <!--主版右侧-->
             <div class="col-md-3">
                 <div class="bulletin table-bordered">
@@ -649,7 +656,7 @@ body{
                                         	<a href="#house-item1" data-toggle="collapse" data-parent="#cehua"><h5>首付80万！能买到哪些房子呢？</h5></a>
                                        
                                         <div class="collapse panel-collapse in" id="house-item1">
-                                        	<img src='img/cehua-house23109.png' width="300" height="180"/>
+                                        	<img src='img/cehua-house23109.png'  width="100%" height="180"/>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -657,7 +664,7 @@ body{
                                         	<a href="#house-item2" data-toggle="collapse" data-parent="#cehua"><h5>住宅库存充足？今年厦还有哪些楼盘可买!</h5></a>
                                        
                                         <div class="collapse panel-collapse " id="house-item2">
-                                        	<img src='img/cehua-house223130.png' width="300" height="180"/>
+                                        	<img src='img/cehua-house223130.png' width="100%" height="180"/>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -665,7 +672,7 @@ body{
                                         	<a href="#house-item3" data-toggle="collapse" data-parent="#cehua"><h5>市建设局:商办类项目不得擅自变为居住用途</h5></a>
                                         
                                         <div class="collapse panel-collapse " id="house-item3">
-                                        	<img src='img/cehua-house223150.png' width="300" height="180"/>
+                                        	<img src='img/cehua-house223150.png' width="100%" height="180"/>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -673,7 +680,7 @@ body{
                                         	<a href="#house-item4" data-toggle="collapse" data-parent="#cehua"><h5>房贷新政发布:1笔已结清首付提至40%</h5></a>
                                        
                                         <div class="collapse panel-collapse " id="house-item4">
-                                        	<img src='img/cehua-house223205.png' width="300" height="180"/>
+                                        	<img src='img/cehua-house223205.png' width="100%" height="180"/>
                                         </div>
                                     </div>
                                 </div>
