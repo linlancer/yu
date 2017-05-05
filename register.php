@@ -1,0 +1,320 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>小鱼网</title>
+<script src="../jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.css" rel="stylesheet"/>
+</head>
+<style>
+body{background:url(image/0b4b454cca49654fa9c64a94b8731996.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  	background-color:#333;
+  	font-family: 'microsoft yahei' ,Arial,sans-serif;}	
+.register{margin-top:6%;width:50%;}
+
+
+</style>
+<body>
+<div class="container">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+    	<div class="container">
+        	<ul class="nav navbar-nav col-md-5">
+            	<li class="active"><a class="data-toggle" id="dropdownMenu1" data-toggle="dropdown" href="#">厦门<span class="caret"></span> </a>
+                	<ul class="dropdown-menu pull-left" role="menu" aria-labelledby="dropdownMenu1">
+                    	<li role="presentation"><a href="#"><i class=" icon-beer"></i>  漳州</a></li>
+                        <li><a href="#"><i class=" icon-anchor"></i>  泉州</a></li>
+                        <li><a href="#"><i class=" icon-star"></i>  晋江</a></li>
+                        <li><a href="#"><i class=" icon-home"></i>  福州</a></li>
+                    </ul>
+                </li>
+            	<li ><a class="data-toggle" data-toggle="dropdown" href="#">服务分类<span class="caret"></span> </a>
+                	<ul class="dropdown-menu pull-left">
+                    	<li><a href="#"><i class="icon-food"></i>  美食</a></li>
+                        <li><a href="#"><i class=" icon-desktop"></i>  家居</a></li>
+                        <li><a href="#"><i class=" icon-heart"></i>  婚庆</a></li>
+                        <li><a href="#"><i class=" icon-home"></i>  房产</a></li>
+                        <li><a href="#"><i class=" icon-money"></i>  汽车</a></li>
+                        <li><a href="#"><i class=" icon-magic"></i>  亲子</a></li>
+                        <li><a href="#"><i class=" icon-male"></i>  女性</a></li>
+                    </ul>
+                </li>
+                <li ><a href="yu-shequ.php">社区</a></li>
+               
+                <li ><a href="#" data-toggle="modal" data-target="#phone">手机逛小鱼</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right ">
+            	<li><a href="#" data-toggle="modal" data-target="#myModal2"> 鱼鱼，请登录</a> </li>
+                <li><a href="#"> 注册</a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--手机客户端模态框-->
+<div class="modal fade" id="phone"  role="dialog" aria-hidden="true" aria-labelledby="yu-app">
+    <div class="container" style="margin-top:100px;">
+        <div class=" modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="yu-app">小鱼手机客户端</h4>
+            </div>
+            <div class="modal-body" style="height:600px;">
+                <div class="col-md-5 text-center">
+                	<div style="display:block;width:60%;height:500px;border:#CCC solid 1px;border-bottom:none;border-radius:20px 20px 0 0;margin:auto;margin-top:30px;">
+                    	<div>
+                            <i  style="display:block;width:50px;height:12px;border-radius:6px;background-color:#999;margin-left:90px;margin-top:20px;"></i>
+                            <i  style="display:block;width:12px;height:12px;border-radius:6px;background-color:#999;margin-left:150px;margin-top:-12px;"></i>
+                        </div>
+                        <div class="carousel-inner" style="margin-top:18px;">
+                            <div class="item active"><img src='image/yu-app1351.png' width='100%' height='445' /></div>
+                            <div class="item"><img src='image/yu-app1409.png' width='100%' height='445' /></div>
+                            <div class="item"><img src='image/yu-app1428.png' width='100%'height='445' /></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-7">
+                	<div style="margin-top:50px;">
+                        <img src="image/app-text216.png"/>
+                    </div>
+                    <label>知城事聊生活，话情感养兴致。遇见小鱼网，有可以随心交流的社区圈子，各种热门话题聊到上瘾；任性的生活特惠，让你随时收获"惊喜"。小鱼网客户端，让城市生活更简单。 知城事聊生活，话情感养兴致。遇见小鱼网，有可以随心交流的社区圈子，各种热门话题聊到上瘾；任性的生活特惠，让你随时收获"惊喜"。小鱼网客户端，让城市生活更简单。</label>
+                    <div class="col-md-6" style="margin-top:60px;">
+                    	<div style="margin-top:30px;margin-left:20px;">
+                            <button type="button" class="btn btn-info" style="width:150px;height:50px;font-size:16px;">
+                                <i class="icon-apple"></i> IOS客户端下载
+                            </button>
+                        </div>
+                        <div style="margin-top:50px;margin-left:20px;">
+                            <button type="button" class="btn btn-info" style="width:150px;height:50px;font-size:16px;">
+                                <i class="icon-android"></i> 安卓客户端下载
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-top:60px;">
+                    	<img src="image/bar-code301.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            	<a href="#" class="btn btn-info" data-dismiss="modal" aria-hidden="true">点击前往应用市场下载</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	<div class="container" style="width:35%;margin-top:13%">
+        <div class=" modal-content">
+        	<div class="modal-header">
+                <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="text-center" id="myModalLabel2">登录小鱼网</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-offset-2 col-md-2 control-label">用户名：</label>
+                        <div class="col-md-3"><input class="form-control" type="text" placeholder="请输入用户名"/></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-offset-2 col-md-2 control-label">密码：</label>
+                        <div class="col-md-3"><input class="form-control" type="password" placeholder="请输入密码"/></div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <div class="col-md-offset-5"><input class="btn btn-info"type="submit" value=" 登 录 "></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container register">
+	<div class="panel panel-default">
+    	<div class="panel-heading"><h3>注册小鱼通行证</h3><p>使用小鱼通行证可以登录厦门、漳州、泉州、晋江、福州等小鱼站点。如果您已拥有小鱼通行证，则可在此<a href="#" data-toggle="modal" data-target="#myModal2">登录</a></p></div>
+        <div class="panel-body">
+        	<form class="form-horizontal">	
+            	<div class="form-group">
+                	<label class="col-md-offset-2 col-md-2 control-label">手机号码:</label>
+                    <div class="col-md-3"><input class="form-control" type="text" placeholder="请输入手机号码"/></div>
+                    <div class="input-group-btn"><a class="btn btn-info" href="#">获取验证码</a></div>
+                    <p class="col-md-offset-4 text-info small"> &nbsp;&nbsp;&nbsp;手机号是通行证的唯一标识，请使用手机号登录小鱼。</p>
+                </div>
+                <div class="form-group">
+                	<label class="col-md-offset-2 col-md-2 control-label">验证码:</label>
+                    <div class="col-md-2"><input class="form-control" type="text" placeholder="验证码"/></div>
+                    <span class="text-info small">请输入手机收到的验证码。如果一段时间没有收到，请重新获取</span>
+                </div>
+                <div class="form-group">
+                	<label class="col-md-offset-2 col-md-2 control-label">设置密码:</label>
+                    <div class="col-md-3"><input class="form-control" type="text" placeholder="请输入密码"/></div>
+                    <span class="responseTxt">55555</span>
+                </div>
+                <div class="form-group">
+                	<label class="col-md-offset-2 col-md-2 control-label">确认密码:</label>
+                    <div class="col-md-3"><input class="form-control" type="text" placeholder="请再次输入密码"/></div>
+                    <span class="responseTxt">55555</span>
+                </div>
+                <div class="form-group">
+                	<label class="col-md-offset-2 col-md-2 control-label">设置昵称:</label>
+                    <div class="col-md-2"><input class="form-control" type="text" placeholder="请设置昵称"/></div>
+                </div>
+                <p class="col-md-offset-4 text-info small">用户名长度要求至少4个字符，最多14个字符，应为简体中文、英文、数字或其两类组合
+（建议使用纯简体中文或纯英文），不能以数字开头或全数字，不得带有其他特殊字符。</p>
+                <div class="form-group">
+                    <div class="col-md-offset-4">
+                        <input type="submit" class=" btn-lg btn-info" value="提交注册">
+                       
+                    </div>
+                     
+                </div>
+                <p class="col-md-offset-4 text-info">点击“立即注册”，即表示您同意并愿意遵守<a href="#" data-toggle="modal" data-target="#myModal1">小鱼用户协议和隐私政策</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="container">
+        <div class="modal-dailog">
+          <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title text-center" id="myModalLabel">小鱼用户协议和隐私政策</h3>
+                </div>
+                <div class="modal-body">小鱼网承蒙社会各界&ldquo;鱼友&rdquo;关爱，得以迅速发展，为使登陆本网站的各界朋友能够给更好更正确地利用本站资源，小鱼网谨此特别提醒您：在访问和接受小鱼网服务以及使用小鱼网所提供资料前，请您务必事先认真阅读并遵守本声明（如果您未满18周岁，请在父母或监护人的陪同下阅读本声明）。 <br>
+                  <strong>一、总则</strong> <br>
+                  1．小鱼网（http://www.xiaoyu.com/）及其旗下网站（厦门、泉州、漳州、晋江、福州分站）的所有权以及运营权归福建海都小鱼网络股份有限公司所有。 <br>
+                  2．当您选择使用小鱼网的服务时，即表示您已经认真阅读了本协议并同意接受本协议全部内容以及小鱼网的所有社区规则，您可以选择不登陆或不接受小鱼网的服务，但凡以任何方式登陆本网站或直接、间接使用小鱼网资料，以及通过各类方式利用小鱼网的行为，即表示您同意本协议全部内容并愿意受其约束。 <br>
+                  3．本协议包括本协议内容以及小鱼网已经发布或者将来可能发布放的规则（已发布的规则详见下文地址）。 <br>
+                  4．小鱼网有权根据需要不时地制订、修改本协议及/或各类规则，并以网站公示的方式进行公告，不再进行单独通知。变更后的协议和规则一经在网站公布后，立即自动生效。如您不同意相关变更，应当立即停止使用小鱼网。您继续使用小鱼网服务的，即表示您接受经修订的协议和规则。 <br>
+                  <strong>二、用户账号</strong> <br>
+                  1．小鱼网如果发现用户账号中含有不雅文字或不恰当名称的，本网站保留取消其用户资格的权利。 <br>
+                  (1)请勿以党和国家领导人或其他社会名人的真实姓名、字号、艺名、笔名注册； <br>
+                  (2)请勿以国家机构或其他机构的名称注册； <br>
+                  (3)请勿注册不文明、不健康名字，或包含歧视、侮辱、猥亵类词语的帐号； <br>
+                  (4)请勿注册易产生歧义、引起他人误解或其它不符合法律规定的帐号。 <br>
+                  2．用户有义务保证密码和帐号的安全，用户利用该密码和帐号所进行的一切活动引起的任何损失或损害，由用户自行承担全部责任，本网不承担任何责任。如用户发现帐号遭到未授权的使用或发生其他任何安全问题，应立即修改帐号密码并妥善保管，如有必要，请通知本网。因黑客行为或用户的保管疏忽导致帐号非法使用，本网不承担任何责任。 <br>
+                  <strong>三、使用规则</strong> <br>
+                  1．用户以及使用小鱼网服务的商家不能利用小鱼网服务进行任何违法或不正当的活动，括但不限于下列行为∶ <br>
+                  （1）上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息： <br>
+                  1） 反对宪法所确定的基本原则的； <br>
+                  2） 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的； <br>
+                  3） 损害国家荣誉和利益的； <br>
+                  4） 煽动民族仇恨、民族歧视、破坏民族团结的； <br>
+                  5） 破坏国家宗教政策，宣扬邪教和封建迷信的； <br>
+                  6） 散布谣言，扰乱社会秩序，破坏社会稳定的； <br>
+                  7） 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的； <br>
+                  8） 侮辱或者诽谤他人，侵害他人合法权利的； <br>
+                  9） 含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容； <br>
+                  10） 含有中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的； <br>
+                  （2）不得为任何非法目的而使用网络服务系统； <br>
+                  （3）不利用小鱼网服务从事以下活动： <br>
+                  1) 未经允许，进入计算机信息网络或者使用计算机信息网络资源的； <br>
+                  2) 未经允许，对计算机信息网络功能进行删除、修改或者增加的； <br>
+                  3) 未经允许，对进入计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、修改或者增加的； <br>
+                  4) 故意制作、传播计算机病毒等破坏性程序的； <br>
+                  2．如用户有上述行为的，小鱼网将对用户的账号进行封存同时保留追究相关法律责任的权利。对于使用小鱼网服务的商家，有上述行为的，小鱼网将停止对其服务，同时保留追求相关究相关法律责任的权利。如用户或者商家造成对第三人侵权的，小鱼网如果因此承担了赔偿责任，将保留对用户或者商家追偿的权利。 <br>
+                  3．用户利用小鱼网系统BUG或者使用其他程序进行非正常的获利（包括但不限于小鱼币等虚拟货币或虚拟物品），一经发现，小鱼网将视情节严重程度对用户收回非正常获利或进行账号封存等处罚措施。 <br>
+                  4．小鱼网系提供自由和公开的信息交流平台，本网站关于用户以及商家或其提供的作品、产品、物品（包括但不限于名称、联系人及联络信息，产品的描述和说明，相关图片、视讯等）信息均属自由发布，用户依法应对其提供的任何信息承担全部责任。小鱼网对站内所有文章，内容，信息，资料，均不保证其准确性，完整性，有效性，也不代表网站已对信息的来源和内容的真实性进行了审查与认可。敬请网友对获取的信息详加审查。对因阅读或采用本网站信息而发生的纠纷，以及任何使用或提供本网站信息所发生的民事、商事活动及其风险本网站不承担任何责任。 <br>
+                  5．在小鱼网发表的文章、作品仅代表作者本人的观点，与小鱼网及运营商立场无关。小鱼网用户因为违反本声明的规定而触犯中华人民共和国法律的，一切后果自己负责，小鱼网及运营商不承担任何责任。出于遵守国家相关法律、法规的前提，我们有权在不经作者准许的情况下删除其在小鱼网所发表的文章。违法情节严重者，小鱼网保留将作者的网站注册信息提交给相关部门的权利。 <br>
+                  <strong>四、隐私保护</strong> <br>
+                  1.小鱼网承诺对注册会员以及使用过小鱼网服务的客户的个人资料尽到安全保障责任，但对以下情形所发生的用户资料公布、泄露以及因此产生的损失免责: <br>
+                  1）政府部门、司法机关等依照法定程序要求本网站披露个人注册资料或者在小鱼网使用服务时所留下的记录时，本网站将依执法单位之要求或为公共安全之目的提供； <br>
+                  2）由于用户个人原因将个人密码告知他人或与他人共享注册账户，由此导致的任何个人资料泄露； 　 <br>
+                  3）由于用户个人原因将使用小鱼网服务时所留下的隐私信息告知他人导致的隐私信息 泄露。 <br>
+                  4）任何由于计算机问题、黑客攻击、计算机病毒侵入或发作，或因政府管制而造成的暂时性关闭等影响网络正常经营的不可抗力而造成的个人资料以及任何的用户隐私或者个人信息泄露、丢失、被盗用或被窜改等。 <br>
+                  5）事先获得用户的明确授权 <br>
+                  2.小鱼网可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与本社区同等的保护用户隐私的责任，则本网有权将用户的注册资料等提供给第三方。 <br>
+                  3.在不透露单个用户隐私资料的前提下，本社区有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。 <br>
+                  <strong>五、知识产权</strong> <br>
+                  1．用户在小鱼网发表或上传的所有信息（即属于《中华人民共和国著作权法》规定的作品包括但不限于文字、图片、音乐、电影、表演和录音录像制品和电脑程序等）均享有完整的知识产权，或者已经得到相关权利人的合法授权。如用户违反本条规定造成本社区被第三人索赔的，用户应全额补偿本社区一切费用（包括但不限于各种赔偿费、诉讼代理费及为此支出的其他合理费用）； <br>
+                  2．用户在本网站发布的信息、言论或作品，不能侵害他人合法权利，本网站只在社区管理总规定范围内进行审核管理。一经权利人提出异议并提供书面通知和有效的证明资料后，本网站有权立即删除该信息、言论或作品。将不予自动恢复，除非您能提供相关证据以证明您并没有侵害相关权利人利益。 <br>
+                  3．用户可以下载小鱼网上显示的资料，但这些资料只限用于个人学习研究使用，不得用于任何商业用途，无论是否在资料上明示，所有此等资料都是受到版权法的法律保护。用户没有获得小鱼网各自的版权所有者明确的书面同意下，不得分发、修改、散布、再使用、再传递或使用本网站的内容用于任何公众商业用途。 <br>
+                  4．除小鱼网另有明确说明或者中国法律有强制性规定外，小鱼网会员原创的作品，其他网站及传统媒体如需使用，须取得作者许可，未经许可严禁转载或用于其它商业用途。未经小鱼网和作者同意，其他任何机构不得以任何形式侵犯作者及小鱼网著作权，包括但不限于：擅自复制、链接、非法使用或转载，或以任何方式建立作品镜像。 <br>
+                  5. 小鱼网特有的标识、版面设计、编排方式等版权均属小鱼网享有。任何人未经小鱼网许可，不得任意复制或转载。 <br>
+                  <strong>六、商家责任声明</strong> <br>
+                  1．本条所指商家为在小鱼网&ldquo;网上商店&rdquo;进行销售行为的用户。 <br>
+                  2．商家保证对客户所登记的隐私以及个人信息做好保密以及安全保障工作。 <br>
+                  3．商家保证发布的商品内容不存在虚假宣传等容易误导消费者的内容，保证发布的商品或服务和实际商品一致。 <br>
+                  4．商家保证其发布的产品具有完整的经营相关的资质文件。 <br>
+                  5．商家保证遵守上述条款以及国家相关法律，如果商家违反上述条款或者国家相关法律，小鱼网有权停止对其的服务，同时保留同时保留追求相关究相关法律责任的权利。如商家造成对第三人侵权的，小鱼网如果因此承担了赔偿责任，商家应全额补偿本社区一切费用（包括但不限于各种赔偿费、诉讼代理费及为此支出的其他合理费用）。 <br>
+                  <strong>七、小鱼网责任声明</strong> <br>
+                  1．对于用户侵害第三人权利的，在第三人正式发函通知后，小鱼网将进行审查。发现存在侵害事实的，小鱼网将在三个工作日内在不通知用户的情况下移除侵权内容，并不予自动恢复，除非用户能提供相关证据以证明您并没有侵害相关权利人利益。小鱼网在接到第三人通知后尽到审查以及删除相关侵权内容的义务，将不承担任何责任。（权益保护投诉须知：http://bbs.xmfish.com/read-htm-tid-2434276.html） <br>
+                  2．小鱼网对&ldquo;网上商店&rdquo;只进行形式上的审查。小鱼网之&ldquo;网上商店&rdquo;的设立不表示小鱼网介入用户对&ldquo;网上商店&rdquo;的管理，也不导致小鱼网对&ldquo;网上商店&rdquo;的物品产生任何的处分权利（小鱼网不提供任何传统意义上的&ldquo;店铺&rdquo;、&ldquo;摊位&rdquo;、&ldquo;展览位&rdquo;或&ldquo;柜台&rdquo;的租赁）。商家对其&ldquo;网上商店&rdquo;内的所有物品享有完全的支配权，并对其所有行为独立承担全部责任。因此，对于买家与商家之间的任何行为或争议、纠纷小鱼网不承当任何义务或责任。 <br>
+                  3．您浏览及使用小鱼网即表明同意承担浏览及使用本网站所带来的一切风险（包括但不限于您使用本网站之任何信息资料）。对于您因进入或使用本网站而带来的任何损害，参与设计、制作、推出小鱼社区的各方均无需就此承担任何责任。如果因为您连接、使用或浏览本网站或因从本网站下载任何材料、数据、文本、影像或影音内容而对您的计算机设备或其他财物造成任何损害或使您的计算机感染病毒，本网站均不承担任何责任。 <br>
+                  4．本网站服务可能会提供由第三方发起并维护之特定互联网站的链接。网站提供该等链接的目的仅在于向您提供方便。因此，对于该等网站的任何问题，小鱼社区不作任何保证。 <br>
+                  5．任何因用户或者商家因对第3人侵权而导致小鱼网因此承当了赔偿责任，小鱼网将依法对其用户或者商家进行追偿，同时要求赔偿其商业名誉损失以及公开声明道歉。 <br>
+                  6．小鱼网不保证所提供数据和服务的准确性、及时性、可靠性、完整性，小鱼网如因系统维护或升级而需暂停服务时，尽量将事先公告，但不是必经程序，如产生数据和服务传输的延误、缺失、中断或终止。若因线路及非本网站控制范围外的硬件故障或其它不可抗力而导致数据和服务传输的延误、缺失、中断或终止，或出现任何其他问题，本网站不承担任何责任。 <br>
+                  <strong>八、其它</strong> <br>
+                  1．本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。 <br>
+                  2. 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。 <br>
+                  3. 本协议解释权及修订权归福建海都小鱼网络股份有限公司所有。 <br>
+              4. 社区管理规定及相关版规请参各城市分站论坛版规。
+              </div>
+              	<div class="modal-footer">
+                	<button type="button" class="btn btn-info" data-dismiss="modal" >我已了解，关闭</button>
+                </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+	
+    	<p class=" text-info text-center">Copyright © 2003-2017 小鱼网 版权所有，并保留所有权利。   <a href="#">闽公网安备35020302000108号</a> <a href="#">闽ICP备12013448号-2</a></p>
+    
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
