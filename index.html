@@ -103,15 +103,33 @@ body{
 </style>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".changeCity").click(function(){
-			$('#city-list').css("display","block");
+		$(".changeCity").mouseover(function(){
+			$('#city-list').show();
 		});
 		$("#city-list").mouseleave(function(){
-			$('#city-list').css("display","none");
+			$('#city-list').hide();
 		});
 		$("#meirong li").click(function(){
 			$this=$(this);
 			$this.addClass('btn-info');
+		});
+		$("a[data-toggle='dropdown']").next().hover(function() {
+			$this=$(this);
+			$this.show();
+		},function(){
+			$this=$(this);
+			$this.hide();
+		});
+		$("a[data-toggle='dropdown'] img").mouseenter(function() {
+			$this=$(this);
+			$this.parent().next().show();
+		});
+		$("a[data-toggle='dropdown']").hover(function() {
+			$this=$(this);
+			$this.next().show();
+		},function() {
+			$this=$(this);
+			$this.next().hide();
 		});
     });
 		$(function sideMenu(){
@@ -294,17 +312,17 @@ body{
         <!--网站导航-->
         <div class="container" style="width:1140px;padding:0px 0;">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#" class="btn btn-danger">首页</a></li>
-                <li><a href="yu-shequ.php" class="btn btn-success">社区</a></li>
-                <li><a href="#" class="btn btn-info">我的空间</a></li>
-                <li><a href="#" class="btn btn-danger">手机客户端</a></li>
-                <li><a href="#" class="btn btn-info">小鱼温度</a></li>
-                <li><a href="#" class="btn btn-success">小鱼婚嫁</a></li>
-                <li><a href="#" class="btn btn-warning">小鱼二手车</a></li>
-                <li><a href="#" class="btn btn-primary">小鱼旅游</a></li>
+                <li class="active"><a href="#" >首页</a></li>
+                <li><a href="yu-shequ.php" >社区</a></li>
+                <li><a href="#" >我的空间</a></li>
+                <li><a href="#" >手机客户端</a></li>
+                <li><a href="#" >小鱼温度</a></li>
+                <li><a href="#" >小鱼婚嫁</a></li>
+                <li><a href="#" >小鱼二手车</a></li>
+                <li><a href="#" >小鱼旅游</a></li>
                 <li class="drop-down pull-right">
                     <a href="#" class="data-toggle" data-toggle="dropdown" id="wechat">
-                        <img class="img-responsive wechat" src="image/wechat.png">
+                        <img class="img-responsive wechat" src="image/wechat.png" style="margin-top:-5px;">
                     </a>
                     <ul class="dropdown-menu" role="menu"aria-labelledby="wechat">
                         <li role="presentation"><img src="image/erweima.png" ></li>
