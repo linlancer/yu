@@ -27,22 +27,43 @@ body{
 	margin-top:50px;
 	}
 .page-header{
-	background:url(image/bg.jpg) center;
+	background:url(image/bg0.jpg) center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  	background-color:#333;
+  	background-color:#999;
 	}	
 .page-header .container{
 	height:180px;
 	}
-.side-menu{
+@media screen and (max-width:1400px){.side-menu{
 	position:fixed;
-	margin-top:150px;
-	margin-left:89%;
+	z-index:300;
+	display:none;
+	}
+}
+@media screen and (min-width:1400px){.side-menu{
+	position:fixed;
+	margin-top:13%;
+	right:20px;
 	z-index:300;
 	}
+}
+@media screen and (min-width:1600px){.side-menu{
+	position:fixed;
+	margin-top:13%;
+	right:100px;
+	z-index:300;
+	}
+}
+@media screen and (min-width:1920px){.side-menu{
+	position:fixed;
+	margin-top:13%;
+	right:260px;
+	z-index:300;
+	}
+}
 .carousel-title{
 	background-color:#000;
 	opacity:0.7;
@@ -100,19 +121,24 @@ body{
 	margin:0px 0;
 	}
 
+
 </style>
 <script type="text/javascript">
 	$(document).ready(function() {
+		
 		$(".changeCity").mouseover(function(){
 			$('#city-list').show();
 		});
+		
 		$("#city-list").mouseleave(function(){
 			$('#city-list').hide();
 		});
+		
 		$("#meirong li").click(function(){
 			$this=$(this);
 			$this.addClass('btn-info');
 		});
+		
 		$("a[data-toggle='dropdown']").next().hover(function() {
 			$this=$(this);
 			$this.show();
@@ -120,10 +146,12 @@ body{
 			$this=$(this);
 			$this.hide();
 		});
+		
 		$("a[data-toggle='dropdown'] img").mouseenter(function() {
 			$this=$(this);
 			$this.parent().next().show();
 		});
+		
 		$("a[data-toggle='dropdown']").hover(function() {
 			$this=$(this);
 			$this.next().show();
@@ -131,14 +159,14 @@ body{
 			$this=$(this);
 			$this.next().hide();
 		});
-    });
-		$(function sideMenu(){
-			var width=$('body').width();
-			if(width<=1340){
-				$('.side-menu').hide();
-			};
+		
+		$('#city-list a').click(function() {
+			$this=$(this);
+			$('.location strong').html($this.text());
+			var URL='bg'+$this.index();
+			$('.page-header').css('background','url(image/'+URL+'.jpg) center');
 		});
-
+    });
 			
 </script>
 <body>
@@ -295,11 +323,12 @@ body{
                     <div class="col-md-2" style="margin-top:50px;">
                         <img class="img-responsive" src="image/title.png">
                     </div>
-                    <div class="" style="margin-top:70px;">
-                        <strong class="city">厦门</strong>
+                    <div class="location" style="margin-top:70px;">
+                        <strong class="city" >厦门</strong>
                         <a href="#" class="changeCity" ><span class="text-info">[切换城市]</span></a>
                     </div>
                     <div class=" btn-group" id="city-list" style="display:none;margin-left:130px;" >
+                    	<a href="#" class="btn btn-default"> 厦门</a>
                         <a href="#" class="btn btn-default"> 泉州</a>
                         <a href="#" class="btn btn-default"> 晋江</a>
                         <a href="#" class="btn btn-default"> 漳州</a>
